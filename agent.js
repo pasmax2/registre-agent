@@ -19,7 +19,7 @@ const { COLLECTOR_URL, SERVER_ID, API_KEY } = config;
 
 if (!COLLECTOR_URL || !SERVER_ID || !API_KEY) {
   console.error('Erreur: config.json est incomplet. Relancez "bash install.sh".');
-  process.exit(1D);
+  process.exit(1);
 }
 
 const POST_URL = `${COLLECTOR_URL}/${SERVER_ID}`;
